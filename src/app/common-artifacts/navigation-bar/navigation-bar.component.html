@@ -6,7 +6,7 @@
             <ul class="main-nav">
                 
                 <li *ngFor="let item of utilOptions"> 
-                   <a routerLink="{{item.url}}" routerLinkActive="active" > <strong> {{item.name}} </strong></a>  
+                   <a routerLink="{{item.url}}" routerLinkActive="active" id={{item.name|lowercase}} [ngClass]="{'underlinedStyle': id == (item.name | lowercase)}" (click)="updateUnderlinedStyle(item.name)" > <strong> {{item.name}} </strong></a>  
                 </li>
             
             </ul>

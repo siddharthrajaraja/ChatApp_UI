@@ -26,4 +26,9 @@ export class NavigationBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  id : string = ""
+  updateUnderlinedStyle(id:string){
+    this.id=id.toLocaleLowerCase()
+    console.log("id :",this.id)
+  }
 }

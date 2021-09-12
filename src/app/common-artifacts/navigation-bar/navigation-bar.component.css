@@ -36,6 +36,10 @@
   transition-delay: 250ms;
 }
 
+.main-nav li a.underlinedStyle {
+  border-bottom: 1px solid black;
+}
+
 .logo img {
   float: left;
   vertical-align: middle;
