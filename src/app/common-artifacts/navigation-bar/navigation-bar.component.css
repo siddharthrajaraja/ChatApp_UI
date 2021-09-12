@@ -1,0 +1,49 @@
+.main-nav {
+  list-style: none;
+  float: right;
+  margin-top: 1.5rem;
+}
+
+.logo {
+  float: left;
+  margin-top: 0.25rem;
+}
+
+.main-nav li {
+  display: inline-flex;
+  margin-left: 10px;
+  margin-right: 100px;
+}
+
+.main-nav li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  padding: 10%;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.main-nav li a::after {
+  margin-bottom: 5px;
+}
+
+.main-nav li a:hover {
+  border-bottom: 1px solid black;
+  transition-delay: 250ms;
+}
+
+.logo img {
+  float: left;
+  vertical-align: middle;
+}
+
+span {
+  margin-top: 20%;
+  float: right;
+  display: table-cell;
+  vertical-align: middle;
+}

@@ -1,0 +1,41 @@
+.footer {
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  background-color: rgb(243, 241, 241);
+  border-top: 1px solid black;
+}
+
+.copyrights {
+  margin: 0 40%;
+  bottom: 0;
+}
+
+.codechef {
+  height: 50%;
+}
+
+.social-links {
+  width: 100%;
+  margin-left: 8%;
+}
+
+.get-tested-covid19 {
+  background-color: black;
+  width: 12.5%;
+  height: 12.5%;
+}
+
+.website-name {
+  font-size: 180%;
+}
+
+.other-websites {
+  margin: 0 auto;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+}

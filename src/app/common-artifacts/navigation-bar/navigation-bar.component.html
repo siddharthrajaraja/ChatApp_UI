@@ -1,0 +1,14 @@
+<header>
+    <nav class="navbar row">
+        <div class="logo">
+            <img src="../../../assets/logo.png" alt="" srcset=""> <span>MyApp</span>
+        </div>
+            <ul class="main-nav">
+                
+                <li *ngFor="let item of utilOptions"> 
+                   <a routerLink="{{item.url}}" routerLinkActive="active" > <strong> {{item.name}} </strong></a>  
+                </li>
+            
+            </ul>
+    </nav>
+</header>

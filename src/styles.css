@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(./grid.css);
+/*
+    --------------------------
+            BASIC SETUP
+    --------------------------
+*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: white;
+  color: black;
+  text-rendering: optimizeLegibility;
+  font-family: /*'Ragged One', cursive,*/ sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/*
+    --------------------------
+        HEADER
+    --------------------------
+*/
+
+header {
+  height: 12vh;
+  background-color: rgb(243, 241, 241);
+  box-shadow: 1px 1px rgb(63, 62, 62);
+}
+
+/*
+    --------------------------
+        CLEAR-FIX to Clear floatsif any
+    --------------------------
+*/
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix::after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}

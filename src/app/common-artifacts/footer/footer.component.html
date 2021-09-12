@@ -1,0 +1,27 @@
+<div class="footer">
+    <div class="row social-links">
+            <ng-template ngFor let-socialLink [ngForOf]='socialLinks' let-i="index" >
+                <div class="col social-link-container span-1-of-{{socialLinks.length}}">
+                    <a href="{{socialLink.url}}"><img src="{{socialLink.icon}}" class=" {{socialLink.className}}" alt=""></a> 
+                </div>
+            </ng-template>
+    </div>
+    <div class="row">
+        <ng-template ngFor let-otherWebsite [ngForOf]='otherWebsites' >
+            <div class="col span-1-of-2 other-websites">
+                <a href="{{otherWebsite.url}}">
+                    <img src="{{otherWebsite.icon}}" class='{{otherWebsite.className}}' alt="">
+                    <span *ngIf="otherWebsite.renderWebsiteName" class="website-name">
+                        {{otherWebsite.websiteName}}
+                    </span>
+                </a>
+            </div>
+    </ng-template>
+
+    </div>
+    <div class="row">
+        <div class="col span-2-of-2 copyrights">
+            ©2021 MyApp
+        </div>
+    </div>
+</div>
